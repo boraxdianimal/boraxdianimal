@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="png and vid\favicon-32x32.png">
+<title>JCPSNHS</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.btn{
+        background-color: rgb(105, 98, 199);
+        width: 200px;
+        height: 40px;
+        margin-left: 50px;
+        border-radius: 4px;
+    } 
+
+    .btn2{
+        background-color: rgb(202, 226, 157);
+        width: 200px;
+        height: 40px;
+        margin-left: 50px;
+        border-radius: 4px;
+    } 
+    .btn3{
+        background-color: rgb(255, 67, 54);
+        width: 200px;
+        height: 40px;
+        margin-left: 50px;
+    } 
+    .img{
+        border: 3px solid black;
+    }
+    #title{
+    text-align: center;
+    margin: 10px;
+    font-size: 80px;
+    font-family: arial;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  cursor: pointer;
+}
+.pic{
+    border-radius: 8px;
+}
+body{
+    background-color: rgb(73, 136, 253);
+}
+#credits{
+            text-align: center;
+            font-size: 10px;
+        }
+</style>
+</head>
+<body>
+  <h1 id="title">THE FOUNDATION DAY OF JCPSNHS</h1>
+<div style="text-align:center">
+  <h2>images caught</h2>
+ 
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img class="pic"src="png and vid\IMG20230303143438.jpg" alt="kite making contest" style=" width: 100%;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img class="pic" src="png and vid\IMG20230303095531.jpg" alt="shato" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img  class="pic"src="png and vid\IMG20230303095558.jpg" alt="enter palaog" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img  class="pic"src="png and vid\IMG20230303095847.jpg" alt="volleyball" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext">foundation day</div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+<a href="next.html"><button class="btn">back</button></a>
+<a href="index.html"><button class="btn2">return to home</button></a>
+<p id="credits">©shammy din</p>  
+</body>
+</html>

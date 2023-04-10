@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: rgb(73, 136, 253);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+}
+#title{
+    text-align: center;
+    margin: 10px;
+    font-size: 80px;
+    font-family: arial;
+}
+#pic{
+    width: 2000px;
+    height: 700px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
